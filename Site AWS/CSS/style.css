@@ -1,0 +1,160 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Animações */
+
+@keyframes carscroll {
+    0% {
+        margin-right: -45vw;
+        opacity: 30%;
+    }
+    100% {
+        margin-right: 2.65vw;
+        opacity: 100%;
+    }
+}
+
+@keyframes txtscroll {
+    0% {
+        margin-left: -45vw;
+        opacity: 30%;
+    }
+    100% {
+        margin-left: 10vw;
+    }
+}
+
+@keyframes headerop {
+    0% {
+        opacity: 10%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+/* Estilização do site / desktop 1080p ~ 720p */
+
+:root {
+    --CorSecundaria: #435585; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 9vh;
+    margin-top: 1.5vh;
+    animation-name: headerop;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.imglogo {
+    float: left;
+    width: 3.5vw;
+    margin: .5vw;
+    transition: 0.3s ease-in-out;
+    margin-left: 2.5vw;
+    margin-right: 16vw;
+}
+
+.anchlogo {
+    text-decoration: none;
+}
+
+.nomecs {
+    font-family: 'League Spartan', sans-serif;
+    position: absolute;
+    margin: .5vw;
+    font-size: 2vw;
+    color: transparent;
+    transition: 1s ease-in-out;
+}
+
+.nomecs:hover {
+    color: #1A3540;
+    padding-left: 6.5vw;
+}
+
+main{
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient(white 0.2%, var(--CorSecundaria) 99.8%);
+}
+
+.compra {
+    vertical-align: center;
+    line-height: 9vh;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+.dcompra {
+    display: inline-block;
+    margin-left: 5vw;
+    margin-right: 0.3vw;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+    width: 8vw;
+    height: 7vh;
+    border-bottom: 0.15vw solid transparent;
+    transition: 0.5s ease-in-out;
+}
+
+.dcompra:hover {
+    cursor: pointer;
+    border-bottom: 0.15vw solid #1A3540;
+}
+
+.usericon {
+    width: 2.5vw;
+    float: right;
+    margin-top: -5vh;
+    margin-right: 6.5vw;
+}
+
+.tituloPrincipal {
+    height: 35vh;
+    width: 55vw;
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 4vw;
+    line-height: 50%;
+    /* background-color: red; */
+    padding-top: 25vh;
+    margin-left: 10vw;
+    animation-name: txtscroll;
+    animation-duration: 2.3s;
+    animation-fill-mode: forwards;
+    margin-bottom: 10vh;
+}
+
+.carimg {
+    float: right;
+    width: 50vw;
+    margin-right: -45vw;
+    margin-top: -40vh;
+    animation-name: carscroll;
+    animation-duration: 2.3s;
+    animation-fill-mode: forwards;
+}
+
+.btcompra {
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+    font-size: 3vw;
+    margin-left: 10vw;
+}
