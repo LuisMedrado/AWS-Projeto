@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 /* Animações */
 
@@ -38,6 +39,11 @@
 }
 
 /* Estilização do site / desktop 1080p ~ 720p */
+/* Header e tela inicial */
+
+/* ::selection {
+    color: rgba(255, 235, 205, 0.521);
+} */
 
 :root {
     --CorSecundaria: #435585; 
@@ -50,10 +56,13 @@ body {
 header {
     width: 100vw;
     height: 9vh;
-    margin-top: 1.5vh;
+    padding-top: 1.5vh;
     animation-name: headerop;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
+    position: fixed;
+    z-index: 1;
+    background: white;
 }
 
 .imglogo {
@@ -85,7 +94,7 @@ header {
 
 main{
     width: 100vw;
-    height: 90vh;
+    height: 101vh;
     background: linear-gradient(white 0.2%, var(--CorSecundaria) 99.8%);
 }
 
@@ -95,6 +104,8 @@ main{
     font-family: 'League Spartan', sans-serif;
     text-align: center;
     font-size: 1.4vw;
+    text-decoration: none;
+    color: black;
 }
 
 .dcompra {
@@ -122,6 +133,13 @@ main{
     margin-right: 6.5vw;
 }
 
+.flag {
+    width: 2.5vw;
+    float: right;
+    margin-right: 2.4vw;
+    margin-top: -3.95vh;
+}
+
 .tituloPrincipal {
     height: 35vh;
     width: 55vw;
@@ -137,7 +155,7 @@ main{
     animation-name: txtscroll;
     animation-duration: 2.3s;
     animation-fill-mode: forwards;
-    margin-bottom: 10vh;
+    margin-bottom: 16vh;
 }
 
 .carimg {
@@ -157,4 +175,209 @@ main{
     color: white;
     font-size: 3vw;
     margin-left: 10vw;
+    border-bottom: 0.15vw solid transparent;
+    transition: 0.5s ease-in-out;
 }
+
+.btcompra:hover {
+    cursor: pointer;
+    border-bottom: 0.15vw solid #ffffff;
+}
+
+/* Sobre */
+
+.abtus {
+    margin-top: 17vh;
+}
+
+.carline {
+    width: 100vw;
+    height: 120vh;
+}
+
+.txtabt {
+    /* z-index: 1; */
+    position: absolute;
+    font-family: 'Bebas Neue';
+    font-size: 8vw;
+    color: white;
+    margin-top: -95vh;
+    margin-left: 36vw;
+    letter-spacing: .5vw;
+}
+
+.longtxtabt{
+    position: absolute;
+    font-family: 'Bebas Neue';
+    font-size: 2vw;
+    color: white;
+    margin-top: -65vh;
+    margin-left: 5vw;
+    letter-spacing: .2vw;
+}
+
+/* Saiba mais */
+
+.card {
+    margin-top: -1vh;
+    padding: 0;
+    width: 100vw;
+    height: 225vh;
+    background: linear-gradient(#1A3540 55%,#2d4a55 ,#4f6770,rgb(157, 168, 172) ,aliceblue, white);
+}
+
+.card1 {
+    width: 32vw;
+    height: 47vh;
+    margin-top: 6vh;
+    margin-left: 5vw;
+    border-radius: 10%;
+    border: 5px outset #1A3540;
+}
+
+.card2 {
+    width: 32vw;
+    height: 47vh;
+    margin-top: 20vh;
+    float: right;
+    margin-right: 5vw;
+    border-radius: 10%;
+    border: 5px outset #1A3540;
+}
+
+.card3 {
+    width: 32vw;
+    height: 47vh;
+    margin-top: 19.6vh;
+    margin-left: 5vw;
+    border-radius: 10%;
+    border: 5px outset #1A3540;
+}
+
+.txtcard {
+    color: #ffffff;
+    margin-top: -3.5vw;
+    font-size: 1.6vw;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-left: 7vw;
+}
+
+.txtcard2 {
+    color: #ffffff;
+    margin-top: 32vw;
+    font-size: 1.6vw;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-right: -30.5vw;
+    float: right;
+}
+
+.txtcard3 {
+    color: #ffffff;
+    margin-top: -3.5vw;
+    font-size: 1.6vw;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-left: 7vw;
+}
+
+.txtext {
+    margin-left: 45vw;
+    color: #ffffff;
+    margin-top: -42vh;
+}
+
+.txtext2 {
+    float: right;
+    margin-right: 45vw;
+    color: #ffffff;
+    margin-top: -40vh;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+}
+
+.txtext3 {
+    margin-left: 45vw;
+    color: #ffffff;
+    margin-top: -40vh;
+}
+
+/* Conheça-nos */
+
+.ctxt {
+    z-index: 1;
+    text-align: center;
+    font-family: 'League Spartan';
+    font-weight: 300;
+    font-size: 8vw;
+    margin-top: -20vh;
+    margin-bottom: 15vh;
+    color: #1A3540;
+}
+
+.section-heading {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 64px;
+    color: #10996d;
+    margin: 0 0 70px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 35vh;
+  }
+  
+  .profile {
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  .profile:hover {
+    transform: translateY(25px);
+  }
+  
+  .profile img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #f7f7f7;
+    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+    cursor: pointer;
+  }
+
+  .profile:not(:first-child) img {
+    margin-left: -20px;
+  }
+  
+  .profile .name {
+    position: absolute;
+    background-color: #1A3540;
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    padding: 15px 30px;
+    border-radius: 100px;
+    bottom: -80px; left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50px);
+    letter-spacing: 1px;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  .profile .name::before {
+    content: "";
+    position: absolute;
+    width: 15px; height: 15px;
+    background-color: #1A3540;
+    top: 0; left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .profile img:hover + .name {
+    opacity: 1;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+  }
