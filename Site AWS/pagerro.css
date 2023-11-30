@@ -90,3 +90,86 @@ body {
     color: white;
     line-height: 8vh;
 }
+
+@media screen and (max-width: 767px) {
+    .header {
+        width: 100vw;
+        height: 4vh;
+    }
+    
+    .imglogo {
+        float: left;
+        width: 7.5vw;
+        margin: .5vw;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .imglogo:hover {
+        scale: 1.05;
+        box-shadow: #1b1b1b -.5vw -.5vh 50px;
+    }
+    
+    .anchlogo {
+        text-decoration: none;
+    }
+    
+    .nomecs {
+        font-family: 'League Spartan', sans-serif;
+        position: absolute;
+        margin: .5vw;
+        font-size: 4vw;
+        color: transparent;
+        transition: 1s ease-in-out;
+    }
+    
+    .nomecs:hover {
+        color: #1A3540;
+        padding-left: 8.5vw;
+    }
+    
+    .eng {
+        width: 50vw;
+        display: block;
+        margin-left: 25vw;
+        margin-right: auto;
+    }
+    
+    .msg {
+        text-align: center;
+        margin-top: 10vh;
+        font-size: 9vw;
+        font-family: 'League Spartan', sans-serif;
+    }
+    
+    .msg2 {
+        text-align: center;
+        margin-top: -1vh;
+        font-size: 3.5vw;
+        left: -5vw;
+        font-family: 'League Spartan', sans-serif;
+    }
+    
+    .voltar {
+        width: 50vw;
+        height: 5vh;
+        background-color: #1A3540;
+        border-radius: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5vh;
+        cursor: pointer;
+        text-align: center;
+        transition: .5s ease-in-out;
+    }
+    
+    .voltar:hover {
+        box-shadow: -1vw 1.5vh 40px #1b1b1b8a;
+    }
+    
+    .voltartxt {
+        font-family: 'League Spartan', sans-serif;
+        font-size: 4.5vw;
+        color: white;
+        line-height: 5.5vh;
+    }
+}

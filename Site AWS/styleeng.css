@@ -217,8 +217,8 @@ main{
     font-size: 8vw;
     color: white;
     margin-top: -95vh;
-    margin-left: 36vw;
     letter-spacing: .5vw;
+    margin-left: 37vw;
 }
 
 .longtxtabt{
@@ -229,6 +229,22 @@ main{
     margin-top: -65vh;
     margin-left: 5vw;
     letter-spacing: .2vw;
+}
+
+.span1 {
+    margin-left: 27vw; font-size: 4vw; border-bottom: 0.75vw solid #62c0e6;
+}
+
+.span2 {
+    margin-left: 13.5vw;
+}
+
+.span3 {
+    margin-left: 5.5vw;
+}
+
+.span5 {
+    margin-left: 17.5vw;
 }
 
 .sp1 {
@@ -273,6 +289,10 @@ main{
     margin-left: 5vw;
     border-radius: 10%;
     border: 5px outset #1A3540;
+}
+
+.par1 {
+    font-family: 'Ubuntu Mono'; font-size: 1.5vw;
 }
 
 .card2 {
@@ -459,7 +479,8 @@ main{
 .txtanchor {
     color: black;
     font-size: 1.5vw;
-    margin-right: 3vw;
+    margin-left: 3vw;
+    margin-right: 0vw;
     margin-top: 10vh;
     display: inline-block;
     text-decoration: none;
@@ -504,6 +525,7 @@ main{
 }
 
 .fbicon {
+    margin-left: 3vw;
     margin-right: 2.5vw;
     width: 3vw;
     height: 3vw;
@@ -633,8 +655,8 @@ main{
 
 .flagbr {
     float: right;
-    width: 3.5vw;
-    margin-top: -8.25vh;
+    width: 5.5vw;
+    margin-top: -3.25vh;
     margin-right: 1.85vw;
 }
 
@@ -656,12 +678,13 @@ main{
 }
 
 .p1 {
-    color: #363062; font-size: 15vw; width: 90vw; line-height: 8vw;
+    color: #363062; font-size: 13.5vw; width: 95vw; line-height: 8vw;
 }
 
 .p2 {
-    width: 40vw; border-bottom: 0.5vw solid #363062;
+    width: 32vw; border-bottom: 0.5vw solid #363062;
 }
+
 
 .carimg {
     float: right;
@@ -709,7 +732,7 @@ main{
     color: white;
     margin-top: -35vh;
     margin-bottom: 20vh;
-    margin-left: 2vw;
+    margin-left: 4vw;
     letter-spacing: .5vw;
 }
 
@@ -722,6 +745,27 @@ main{
     margin-bottom: 6vh;
     margin-left: 5vw;
     letter-spacing: .2vw;
+}
+
+.span2 {
+    margin-left: 0;
+}
+
+.span3 {
+    margin-left: 0;
+}
+
+.span4 {
+    margin-left: 25vw;
+}
+
+.span5 {
+    margin-left: 13vw;
+}
+
+.sp {
+    color: #62c0e6;
+    margin-left: 10vw;
 }
 
 .sp1 {
@@ -737,7 +781,7 @@ main{
 }
 
 .sp4 {
-    margin-left: 3.5vw;
+    margin-left: 20vw;
 }
 
 .sp5 {
@@ -750,6 +794,10 @@ main{
 
 .spex {
     margin-left: 2vw;
+}
+
+.spesp {
+    margin-left: 25vw;
 }
 
 /* Saiba mais */
@@ -945,7 +993,8 @@ main{
 .logorodape {
     width: 15.5vw;
     margin-top: -30vh;
-    margin-left: 25.5vw;
+    margin-left: 15.5vw;
+    
 }
 
 .nomelogo {
@@ -956,7 +1005,7 @@ main{
 .txtanchor {
     color: black;
     font-size: 3.5vw;
-    margin-right: 3vw;
+    margin-right: 1vw;
     margin-top: 10vh;
     display: inline-block;
     text-decoration: none;
@@ -989,19 +1038,19 @@ main{
 }
 
 .divtxt {
-    margin-top: 14vh;
-    margin-left: -55vw;
+    margin-top: 13vh;
+    margin-left: -53vw;
 }
 
 .socialmedia {
     width: 3vw;
     display: inline-flex;
-    margin-left: 7.5vw;
+    margin-left: 9.5vw;
     margin-top: 5vh;
 }
 
 .fbicon {
-    margin-right: 2.5vw;
+    margin-right: .5vw;
     width: 14vw;
     height: 14vw;
 }
